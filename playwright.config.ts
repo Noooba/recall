@@ -1,0 +1,2 @@
+import { defineConfig, devices } from '@playwright/test';
+export default defineConfig({testDir:'./tests/e2e',fullyParallel:false,workers:1,timeout:45000,expect:{timeout:10000},reporter:[['list'],['json',{outputFile:'test-results/e2e-results.json'}]],use:{baseURL:process.env.RECALL_TEST_URL||'http://127.0.0.1:3000',trace:'retain-on-failure'},projects:[{name:'chromium',use:{...devices['Desktop Chrome'],launchOptions:{executablePath:process.env.RECALL_CHROMIUM_PATH,args:['--no-sandbox']}}},{name:'firefox',use:{...devices['Desktop Firefox']}}]});

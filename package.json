@@ -1,0 +1,45 @@
+{
+  "name": "recall",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Recall: know what you know. An adaptive learning app that models what a student actually understands.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^3.5.2",
+    "@radix-ui/react-dialog": "^1.2.0",
+    "lucide-react": "^1.55.0",
+    "motion": "^14.1.0",
+    "next": "^15.5.27",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^15.5.27",
+    "playwright-core": "^1.61.1",
+    "postcss": "^8.5.29",
+    "tailwindcss": "^3.4.14",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "overrides": {
+    "postcss": "^8.5.29",
+    "sharp": "^0.35.5",
+    "postcss-selector-parser": "^7.1.6"
+  }
+}
